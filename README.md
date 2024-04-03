@@ -1,14 +1,40 @@
-# Stroke Prediction Models
 
-This repository explores the effectiveness of various classification models in predicting stroke occurrences. We evaluated popular models including XGBoost, CatBoost, LightGBM, Bagging, and ExtraTrees classifiers. Each model's accuracy is detailed below:
+# Stroke Prediction Models and Data Analysis
 
-- ExtraTrees Classifier: 99.8%
-- Bagging Classifier: 98.5%
-- CatBoost Classifier: 97.7%
-- XGBoost Classifier: 96.3%
-- LightGBM Classifier: 91.8%
+This repository presents an in-depth analysis of stroke prediction, encompassing data cleaning, exploratory data analysis (EDA), and model training and evaluation.
 
-Explore our research findings and methodologies to understand efficient stroke prediction techniques.
+## Data Cleaning and Exploratory Data Analysis (EDA)
+
+We began by thoroughly cleaning the dataset, addressing missing values, outliers, and inconsistencies. Following this, we conducted exploratory data analysis to gain insights into the dataset's characteristics and relationships between variables. Visualizations and statistical summaries were utilized to comprehend the data's distribution and patterns.
+
+## Model Training and Evaluation
+
+### SMOTE (Synthetic Minority Over-sampling Technique)
+
+We employed SMOTE to address class imbalance, ensuring robust model performance in predicting stroke occurrences.
+
+### Model Training
+
+We trained a variety of classification models on a split of 80-20. The models included:
+- Random Forest (RF)
+- Naive Bayes (NB)
+- Logistic Regression (LR)
+- Ridge Classifier (RC)
+- K-Nearest Neighbors (KNN)
+- Decision Trees
+- ExtraTrees
+- XGBoost (XGB)
+- LightGBM (LGBM)
+- CatBoost
+- Bagging Classifier
+
+### Evaluation Metrics
+
+Each model was evaluated using a range of metrics including accuracy, precision, recall, F1-score, and ROC-AUC. These metrics provide a comprehensive understanding of each model's performance and their suitability for stroke prediction.
+
+## Conclusion
+
+After thorough analysis and evaluation, we derived insights into the effectiveness of different classification models in predicting strokes. The conclusion sheds light on the most promising models and highlights areas for further improvement.
 
 ## Usage
 
@@ -18,11 +44,11 @@ Explore our research findings and methodologies to understand efficient stroke p
    ```
 
 2. Navigate to the cloned directory:
-  
-   cd 
-   
+   ```
+   cd stroke-prediction-analysis
+   ```
 
-3. Run the provided scripts to train and evaluate the models.
+3. Follow the provided Jupyter notebooks or scripts to replicate the analysis and explore the models.
 
 ## Contributions
 
@@ -31,3 +57,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
